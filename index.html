@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="estilos.css">
+
+    <title>Cajero automatico</title>
+
+</head>
+
+<body style="background-color: rgb(155, 223, 223);">
+
+    <h1>Banco MHz</h1>
+
+    <div class="container">
+
+        <div class="row align-items-start">
+
+            <img src="imagenes/cajero.png">
+
+            <div class="col">
+
+                <textarea type="text" id="cantidad" class="datos" placeholder="$"></textarea>
+                <label type="text" class="pantalla" id="lbl_datos"></label>
+            </div>
+
+            <div class ="btn">
+
+                <button type="submit" id="aceptar" class="btn_aceptar">Aceptar</button>
+                <button type="submit" id="cancelar" class="btn_cancelar">Cancelar</button>
+                
+            </div>
+            <div class="col consultar">
+
+
+                <p class="r_retirar">
+                    <input name="opciones" type="radio" id="retirar" />
+                    <label class="label_ret">Retirar</label>
+
+                </p>
+
+                <p class="r_consultar">
+
+                    <input name="opciones" type="radio" id="consultar" />
+                    <label>Consultar
+                    </label>
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="cajero.js"></script>
+</body>
+
+</html>
